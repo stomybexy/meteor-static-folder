@@ -1,10 +1,10 @@
 Package.describe({
-  name: 'jonatan:polyteor-dev',
-  version: '0.0.1',
+  name: 'jonatan:static-folder',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
-  summary: 'Map an url pattern to a folder outside meteor folder.',
+  summary: 'Serve static files from folder outside meteor folder.',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/stomybexy/meteor-static-folder.git',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
