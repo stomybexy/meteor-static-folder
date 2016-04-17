@@ -1,6 +1,6 @@
 Package.describe({
   name: 'jonatan:static-folder',
-  version: '0.0.2',
+  version: '0.0.3',
   // Brief, one-line summary of the package.
   summary: 'Serve static files from folder outside meteor folder.',
   // URL to the Git repository containing the source code for this package.
@@ -15,12 +15,12 @@ Package.onUse(function(api) {
   api.use('ecmascript');
   api.use('meteorhacks:async@1.0.0');
   api.use('meteorhacks:picker@1.0.3');
-    
-    
-    
+
+
+
   api.addFiles('polyteor-dev.js', 'server');
   api.addFiles('route.js', 'server');
-    
+
 });
 
 Package.onTest(function(api) {
