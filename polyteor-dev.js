@@ -19,8 +19,14 @@ try {
 
     process.env.POLYTEOR_FOLDER = (cfg.folder && path.join(rootFolder, cfg.folder)) || path.join(rootFolder, '.polyteor', 'bower_components');
     process.env.POLYTEOR_URL = cfg.url || '/bower_components';
+    process.env.POLYTEOR_REJECT_URL= cfg.reject ;
 
-    console.log('Mapping ', process.env.POLYTEOR_URL, ' to ', process.env.POLYTEOR_FOLDER);
+    console.log('staitic-folder => Mapping ', process.env.POLYTEOR_URL, ' to ', process.env.POLYTEOR_FOLDER);
+    if(  process.env.POLYTEOR_REJECT_URL){
+      console.log('staitic-folder => Ignoring ', process.env.POLYTEOR_REJECT_URL);
+
+    }
+
 
 } catch (e) {
 

@@ -9,8 +9,9 @@ To change that, create ```.polyteor-dev.json``` in the root of your project with
 ```js
     {
         "folder": "<The folder subpath relatively to the root folder of your project>",
-        "url": "<The url path like this: /app/bower_components >"
+        "url": "<The url path like this: /app/bower_components >",
+        "reject": "<url path to ignore, for example: /app/bower_components/my-element >"
     }
 ```
-
+All parameters are optional. Default is assumed if not set.
 Everytime you edit this file, restart your app.

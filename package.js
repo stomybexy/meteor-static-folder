@@ -1,6 +1,6 @@
 Package.describe({
   name: 'jonatan:static-folder',
-  version: '0.0.3',
+  version: '0.0.4',
   // Brief, one-line summary of the package.
   summary: 'Serve static files from folder outside meteor folder.',
   // URL to the Git repository containing the source code for this package.

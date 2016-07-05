@@ -22,7 +22,18 @@ var getRoutes = Picker.filter(function (req, res) {
     // but this callback does not run inside a fiber
     // at the end, you must return either true or false
 
+
+    if(process.env.POLYTEOR_REJECT_URL){
+      var rejectUrlPattern = new RegExp(process.env.POLYTEOR_REJECT_URL.replace(/\//g, '\/') + '\/.*');
+
+      if(req.url.match(rejectUrlPattern)){
+        return false;
+      }
+    }
+
+
     var urlPattern = new RegExp(process.env.POLYTEOR_URL.replace(/\//g, '\/') + '\/.*');
+
 
     return req.method == "GET" && req.url.match(urlPattern);
 });
